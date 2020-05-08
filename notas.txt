@@ -8,3 +8,10 @@
 - documentacion de docker con node: https://nodejs.org/fr/docs/guides/nodejs-docker-webapp/
 - cambiar el script para que inicie con npm start la API agregando: "start": "node src/index.js"
 - crear una imagen con docker: docker build -t node-api .
+- docker images para ver la imagen que creamos
+- para ejecutar la imagen es: docker run -it -p 4000:3000 name_image (el -it es para mostrar por consola 
+mientras se ejecuta, -d para ejecutar como servicio)
+El puerto (-p) es el puerto 3000 que esta pidiendo la pagina para ejecutarse, pero el contenedor lo muestra con el 4000 
+o cualquier otro para visualizarlo fuera del contenedor
+- docker ps para visualizar los contenedores ejecutandose
+- para detener es: docker stop id_contenedor
