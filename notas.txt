@@ -15,3 +15,4 @@ El puerto (-p) es el puerto 3000 que esta pidiendo la pagina para ejecutarse, pe
 o cualquier otro para visualizarlo fuera del contenedor
 - docker ps para visualizar los contenedores ejecutandose
 - para detener es: docker stop id_contenedor
+- Entrar a un contenedor en ejecucion: docker container exec -it name_container /bin/bash
