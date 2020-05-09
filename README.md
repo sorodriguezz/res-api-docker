@@ -3,7 +3,7 @@
 
 ## Índice
 - [Instalacion Docker](#instalacion-docker).
-- [Iniciar proyecto NodeJS](#iniciar-node).
+- [Iniciar proyecto NodeJS](#iniciar-proyecto-nodejs).
 - [Instalacion paquetes necesarios](#paquetes-necesarios).
 - [Configuración de rutas](#configurar-rutas).
 - [Creación Dockerfile](#docker-file).
