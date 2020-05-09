@@ -1,5 +1,6 @@
 # API REST con NodeJS en Docker
 
+#### API Rest simple con NodeJS, para ver el funcionamiento de express, docker y nodejs. El proyecto trata de los inios de la creacion de un server en backend, mostrando funcionamientos sencillos para entender con mejor detalle la funcion de cada linea de codigo.
 
 ## Índice
 - [Instalacion Docker](#1-instalación-docker).
@@ -9,9 +10,7 @@
 - [Configuración dockeringore](#5-configuración-dockerignore).
 - [Cambiar inicio de la aplicación](#6-cambiar-inicio-de-la-aplicación).
 - [Creación imagen docker](#7-creación-imagen-docker).
-- [Comandos docker utiles](#comandos-docker).
-- [Ejecución imagen docker]($ejecutar-image-docker).
-- [Entrar a contenedor docker](#entrar-docker).
+- [Comandos docker utiles](#8-comandos-docker-utiles).
 - [Muestras](#muestras).
 
 
@@ -70,7 +69,7 @@
 ### 2. Iniciar proyecto NodeJS
   - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
   <pre><code>$ npm init -y</code></pre>
-  **Creará un archivo package.json que tendrá todas las configuraciones y dependencias del proyecto**
+  *Creará un archivo package.json que tendrá todas las configuraciones y dependencias del proyecto*
  
 ### 3. Instalación de paquetes necesarios
   - Instalar `morgan` para registrar las solicitudes realizadas al servidor:
@@ -95,5 +94,28 @@
   <pre><code>$ docker build -t node-api .</code></pre>
   - El `.` para especificar en que directorio esta el archivo `Dockerfile` y el `node-api` sera el nombre de la imagen.
   - Una vez creada la imagen puedes usar el comando `docker images` para visualizar las imagenes creadas en docker.
+  - Para ejecutar o arrancar un contenedor con la imagen creada usar:
+  <pre><code>docker run -it -p 4000:3000 name_image</code></pre>
+    - El parametro `-it` es para arrancar por consola el contenedor, en caso de arrancar el contenedor como servicio usar `-d`.
+    - El parametro `-p` indica el puerto que transformará fuera del contenedor, en este caso dentro del contenedor arrancara en el puerto `3000`, para ingresa desde afuera se le indica el puerto `4000`.
+    - Una vez ejecutandose el comando, puedes visualizar el contenedor en ejecución con `docker ps` y `docker stop name_container` para detenerlo.
+    
   
+### 8. Comandos docker utiles
+  - Para entrar por consola a un contenedor en ejecución: 
+  <pre><code>$ docker container exec -it name_container /bin/bash</code></pre>
+  - Para descargar imagenes: 
+  <pre><code>$ docker pull name_image</code></pre>
+  - Mostrar imagenes descargadas: 
+  <pre><code>$ docker images</code></pre>
+  - Para eliminar una imagen: 
+  <pre><code>$ docker rmi  id_container</code></pre>
+  - Mostrar informacion del contenedor:
+   <pre><code>$docker inspect id_container</code></pre>
+  - Para eliminar un contenedor (`-f` para forzar):
+  <pre><code>$ docker rm -f id_container</code></pre>
+  
+### 9. Muestras
+![alt text](https://raw.githubusercontent.com/soRodriguezz/res-api-docker/master/muestra.png)
 
+*Link de referencia:* https://nodejs.org/fr/docs/guides/nodejs-docker-webapp/
