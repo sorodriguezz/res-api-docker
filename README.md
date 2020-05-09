@@ -56,7 +56,9 @@
     - Pruebe la instalación con:
     <pre><code> $ sudo docker version </code></pre>
     - Verifique que Docker Engine esté instalado correctamente ejecutando la  imagen `hello-world`:
-    <pre><code> sudo docker run hello-world </code></pre>
+    <pre><code> $ sudo docker run hello-world </code></pre>
+    - Si desea utilizar Docker como usuario no root, ahora debería considerar agregar a su usuario al grupo "docker" con algo como:
+    <pre><code>$ sudo usermod -aG docker your-user</code></pre>
     
     
 
