@@ -70,4 +70,5 @@
     
 ### 2. Iniciar proyecto NodeJS
   - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
-  <pre><code>$ npm init</code></pre>
+  <pre><code>$ npm init -y</code></pre>
+  Creará un arvhico package.json que tendrá todas las configuraciones y dependencias del proyecto
