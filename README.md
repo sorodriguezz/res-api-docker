@@ -18,6 +18,7 @@
 
 ### 1. Instalación Docker
   - En Windows:
+    - Descargar Docker Desktop desde: https://hub.docker.com/editions/community/docker-ce-desktop-windows/
   
   - En Linux (Ubuntu):
     - Primero, actualice su lista de paquetes existente:
