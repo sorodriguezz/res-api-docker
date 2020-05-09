@@ -5,11 +5,10 @@
 - [Instalacion Docker](#1-instalación-docker).
 - [Iniciar proyecto NodeJS](#2-iniciar-proyecto-nodejs).
 - [Instalacion paquetes necesarios](#3-instalacion-de-paquetes-necesarios).
-- [Configuración de rutas](#configurar-rutas).
-- [Creación Dockerfile](#docker-file).
-- [Configuración dockeringore](#docker-ignore).
-- [Cambiar inicio de la aplicación](#script-inicio).
-- [Creación imagen docker](#docker-image).
+- [Creación Dockerfile](#4-creacion-dockerfile).
+- [Configuración dockeringore](#5-configuracion-dockerignore).
+- [Cambiar inicio de la aplicación](#6-cambiar-inicio-de-la-aplicacion).
+- [Creación imagen docker](#7-creacion-imagen-docker).
 - [Comandos docker utiles](#comandos-docker).
 - [Ejecución imagen docker]($ejecutar-image-docker).
 - [Entrar a contenedor docker](#entrar-docker).
@@ -71,6 +70,30 @@
 ### 2. Iniciar proyecto NodeJS
   - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
   <pre><code>$ npm init -y</code></pre>
-    Creará un archivo package.json que tendrá todas las configuraciones y dependencias del proyecto
+  **Creará un archivo package.json que tendrá todas las configuraciones y dependencias del proyecto**
  
 ### 3. Instalación de paquetes necesarios
+  - Instalar `morgan` para registrar las solicitudes realizadas al servidor:
+  <pre><code>$ npm install morgan</code></pre>
+  - Instalar el framework `express` que esta basado en `http` para NodeJS:
+  <pre><code>$ npm install express</code></pre>
+  
+### 4. Creación Dockerfile
+  - Crear archivo llamado `Dockerfile` en la raíz del proyecto para darle parametro para la creacion de una imagen.
+  - Puedes encontrar mas información en https://docs.docker.com/engine/reference/builder/
+  
+### 5. Configuración dockerignore
+  - Pruedes crear un archivo `.dockerignore` en la raíz del proyecto para que a la hora de crear la imagen docker no cuente las carpetas y archivos descritos en ese archivo.
+  - Más información en https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+### 6. Cambiar inicio de la aplicación
+  - Para cambiar el comando de ejecucion del proyecto a `npm start`, debes dirigirte a `package.json` y en el apartado `scripts` dirá     <code> "test": "mensaje-aqui" </code>
+  - Debes cambiar lo que esta en `"test"` por `"start"` y el `"mensaje_aqui"` por `"node src/index.js"`, el cual es el archivo con el que se ejecuta tu proyecto. Una vez configurado, puedes arracar el proyeto con `npm start`.
+ 
+### 7. Creación imagen docker
+  - Para crear una imagen desde un archivo `Dockerfile` se ocupa: 
+  <code>$ docker build -t node-api .</code>
+  - El `.` para especificar en que directorio esta el archivo `Dockerfile` y el `node-api` sera el nombre de la imagen.
+  - Una vez creada la imagen puedes usar el comando `docker images` para visualizar las imagenes creadas en docker.
+  
+
