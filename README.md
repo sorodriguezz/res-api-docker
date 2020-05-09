@@ -18,7 +18,13 @@
 
 ### 1. Instalación Docker
   - En Windows:
-    - Descargar Docker Desktop desde: https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+    - Registrarse a docker hub en https://hub.docker.com/signup.
+    - Descargar Docker Desktop desde https://hub.docker.com/editions/community/docker-ce-desktop-windows/.
+    - Requisitos: 
+      - Tener Hyper-V instalado.
+      - Tener la virtualización habilitada.
+    - En `cmd` ejecutar:
+    <pre><code>$ docker version </code></pre>
   
   - En Linux (Ubuntu):
     - Primero, actualice su lista de paquetes existente:
