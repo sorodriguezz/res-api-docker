@@ -22,14 +22,16 @@
   - En Linux:
     - Primero, actualice su lista de paquetes existente:
       <pre><code>$ sudo apt update</code></pre>
-      
+    - Intalar paquetes:
       <pre>
-        sudo apt-get install \
+        $ sudo apt-get install \
           apt-transport-https \
           ca-certificates \
           curl \
           gnupg-agent \
           software-properties-common
       </pre>
+    - Agregue la clave GPG oficial de Docker:
+    <pre><code> $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - </code></pre>
 
 ### Iniciar proyecto NodeJS
