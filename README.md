@@ -21,16 +21,16 @@
   
   - En Linux (Ubuntu):
     - Primero, actualice su lista de paquetes existente:
-      <pre><code>$ sudo apt update</code></pre>
+    <pre><code>$ sudo apt update</code></pre>
     - Intalar paquetes:
-      <pre>
+    <pre>
         $ sudo apt-get install \
           apt-transport-https \
           ca-certificates \
           curl \
           gnupg-agent \
           software-properties-common
-      </pre>
+    </pre>
     - Agregue la clave GPG oficial de Docker:
     <pre><code> $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - </code></pre>
     - Verifique que ahora tiene la clave con la huella digital 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88, buscando los últimos 8 caracteres de la huella digital.
@@ -53,6 +53,10 @@
     <pre><code> sudo apt-get update </code></pre>
     - Instale la última versión de Docker Engine y del contenedor:
     <pre><code> $ sudo apt-get install docker-ce docker-ce-cli containerd.io </code></pre>
+    - Pruebe la instalación con:
+    <pre><code> $ sudo docker version </code></pre>
+    - Verifique que Docker Engine esté instalado correctamente ejecutando la  imagen `hello-world`:
+    <pre><code> sudo docker run hello-world </code></pre>
     
     
 
