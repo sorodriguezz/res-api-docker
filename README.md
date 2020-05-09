@@ -87,12 +87,12 @@
   - Más información en https://docs.docker.com/engine/reference/builder/#dockerignore-file
 
 ### 6. Cambiar inicio de la aplicación
-  - Para cambiar el comando de ejecucion del proyecto a `npm start`, debes dirigirte a `package.json` y en el apartado `scripts` dirá     <code> "test": "mensaje-aqui" </code>
+  - Para cambiar el comando de ejecucion del proyecto a `npm start`, debes dirigirte a `package.json` y en el apartado `scripts` dirá     <pre><code> "test": "mensaje-aqui" </code></pre>
   - Debes cambiar lo que esta en `"test"` por `"start"` y el `"mensaje_aqui"` por `"node src/index.js"`, el cual es el archivo con el que se ejecuta tu proyecto. Una vez configurado, puedes arracar el proyeto con `npm start`.
  
 ### 7. Creación imagen docker
   - Para crear una imagen desde un archivo `Dockerfile` se ocupa: 
-  <code>$ docker build -t node-api .</code>
+  <pre><code>$ docker build -t node-api .</code></pre>
   - El `.` para especificar en que directorio esta el archivo `Dockerfile` y el `node-api` sera el nombre de la imagen.
   - Una vez creada la imagen puedes usar el comando `docker images` para visualizar las imagenes creadas en docker.
   
