@@ -1,2 +1,4 @@
-# res-api-docker
-levantar api rest con docker
+# API REST con Docker
+
+## Instalar docker
+`$ sudo apt update`
