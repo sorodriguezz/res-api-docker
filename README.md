@@ -61,12 +61,13 @@
     - Instale la última versión de Docker Engine y del contenedor:
     <pre><code> $ sudo apt-get install docker-ce docker-ce-cli containerd.io </code></pre>
     - Pruebe la instalación con:
-    <pre><code> $ sudo docker version </code></pre>
+    <pre><code>$ sudo docker version </code></pre>
     - Verifique que Docker Engine esté instalado correctamente ejecutando la  imagen `hello-world`:
-    <pre><code> $ sudo docker run hello-world </code></pre>
+    <pre><code>$ sudo docker run hello-world </code></pre>
     - Si desea utilizar Docker como usuario no root, ahora debería considerar agregar a su usuario al grupo "docker" con algo como:
     <pre><code>$ sudo usermod -aG docker your-user</code></pre>
     
     
-
-### Iniciar proyecto NodeJS
+### 2. Iniciar proyecto NodeJS
+      - Abri `cmd`, ubicarse en el directorio del proyecto y usar el comando:
+      <pre><code>$ npm init</code></pre>
