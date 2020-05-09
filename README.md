@@ -19,7 +19,7 @@
 ### 1. Instalación Docker
   - En Windows:
   
-  - En Linux:
+  - En Linux (Ubuntu):
     - Primero, actualice su lista de paquetes existente:
       <pre><code>$ sudo apt update</code></pre>
     - Intalar paquetes:
@@ -37,10 +37,23 @@
     <pre>
       $ sudo apt-key fingerprint 0EBFCD88
       
-        *pub   rsa4096 2017-02-22 [SCEA]
+         pub   rsa4096 2017-02-22 [SCEA]
                9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
          uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
-         sub   rsa4096 2017-02-22 [S]*
+         sub   rsa4096 2017-02-22 [S]
     </pre>
+    - Use el siguiente comando para configurar el repositorio estable:
+    <pre>
+      $ sudo add-apt-repository \
+          "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+          $(lsb_release -cs) \
+          stable"
+    </pre>
+    - Actualice el aptíndice del paquete:
+    <pre><code> sudo apt-get update </code></pre>
+    - Instale la última versión de Docker Engine y del contenedor:
+    <pre><code> $ sudo apt-get install docker-ce docker-ce-cli containerd.io </code></pre>
+    
+    
 
 ### Iniciar proyecto NodeJS
