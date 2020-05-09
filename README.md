@@ -69,5 +69,5 @@
     
     
 ### 2. Iniciar proyecto NodeJS
-      - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
-      <pre><code>$ npm init</code></pre>
+  - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
+  <pre><code>$ npm init</code></pre>
