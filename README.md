@@ -3,7 +3,7 @@
 
 ## Índice
 - [Instalacion Docker](#1-instalación-docker).
-- [Iniciar proyecto NodeJS](#iniciar-proyecto-nodejs).
+- [Iniciar proyecto NodeJS](#2-iniciar-proyecto-nodejs).
 - [Instalacion paquetes necesarios](#paquetes-necesarios).
 - [Configuración de rutas](#configurar-rutas).
 - [Creación Dockerfile](#docker-file).
@@ -69,5 +69,5 @@
     
     
 ### 2. Iniciar proyecto NodeJS
-      - Abri `cmd`, ubicarse en el directorio del proyecto y usar el comando:
+      - Abrir `cmd`, ubicarse en el directorio del proyecto y usar el comando:
       <pre><code>$ npm init</code></pre>
