@@ -1,6 +1,6 @@
 # API REST con NodeJS en Docker
 
-  **API Rest simple con NodeJS, para ver el funcionamiento de express, docker y nodejs. El proyecto trata de los inios de la creacion de un server en backend, mostrando funcionamientos sencillos para entender con mejor detalle la funcion de cada linea de codigo.**
+  **API Rest simple con NodeJS, para ver el funcionamiento de express, docker y nodejs. El proyecto trata de los inicios de la creacion de un server en backend, mostrando coomentando cada linea para entender el funcionamiento de cada linea de codigo.**
 
 ## Índice
 - [Instalacion Docker](#1-instalación-docker).
