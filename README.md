@@ -2,7 +2,7 @@
 
 
 ## Índice
-- [Instalacion Docker](#instalacion-docker).
+- [Instalacion Docker](#1-instalación-docker).
 - [Iniciar proyecto NodeJS](#iniciar-proyecto-nodejs).
 - [Instalacion paquetes necesarios](#paquetes-necesarios).
 - [Configuración de rutas](#configurar-rutas).
@@ -16,7 +16,7 @@
 - [muestras](#muestras).
 
 
-### 1.Instalación Docker
+### 1. Instalación Docker
   - En Windows:
   
   - En Linux:
