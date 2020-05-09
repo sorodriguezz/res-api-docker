@@ -4,11 +4,11 @@
 ## Índice
 - [Instalacion Docker](#1-instalación-docker).
 - [Iniciar proyecto NodeJS](#2-iniciar-proyecto-nodejs).
-- [Instalacion paquetes necesarios](#3-instalacion-de-paquetes-necesarios).
-- [Creación Dockerfile](#4-creacion-dockerfile).
-- [Configuración dockeringore](#5-configuracion-dockerignore).
-- [Cambiar inicio de la aplicación](#6-cambiar-inicio-de-la-aplicacion).
-- [Creación imagen docker](#7-creacion-imagen-docker).
+- [Instalacion paquetes necesarios](#3-instalación-de-paquetes-necesarios).
+- [Creación Dockerfile](#4-creación-dockerfile).
+- [Configuración dockeringore](#5-configuración-dockerignore).
+- [Cambiar inicio de la aplicación](#6-cambiar-inicio-de-la-aplicación).
+- [Creación imagen docker](#7-creación-imagen-docker).
 - [Comandos docker utiles](#comandos-docker).
 - [Ejecución imagen docker]($ejecutar-image-docker).
 - [Entrar a contenedor docker](#entrar-docker).
