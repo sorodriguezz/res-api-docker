@@ -1,4 +1,4 @@
 # API REST con Docker
 
 ## Instalar docker
-`$ sudo apt update`
+<pre><code>$ sudo apt update</code></pre>
