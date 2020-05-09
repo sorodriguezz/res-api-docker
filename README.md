@@ -1,4 +1,4 @@
-# API REST con Docker
+# API REST con NodeJS en Docker
 
 
 ## Índice
@@ -22,6 +22,14 @@
   - En Linux:
     - Primero, actualice su lista de paquetes existente:
       <pre><code>$ sudo apt update</code></pre>
-
+      
+      <pre>
+        sudo apt-get install \
+          apt-transport-https \
+          ca-certificates \
+          curl \
+          gnupg-agent \
+          software-properties-common
+      </pre>
 
 ### Iniciar proyecto NodeJS
