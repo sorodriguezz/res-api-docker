@@ -30,11 +30,11 @@
     - Intalar paquetes:
     <pre>
         $ sudo apt-get install \
-          apt-transport-https \
-          ca-certificates \
-          curl \
-          gnupg-agent \
-          software-properties-common
+           apt-transport-https \
+           ca-certificates \
+           curl \
+           gnupg-agent \
+           software-properties-common
     </pre>
     - Agregue la clave GPG oficial de Docker:
     <pre><code> $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - </code></pre>
@@ -111,7 +111,7 @@
   - Para eliminar una imagen: 
   <pre><code>$ docker rmi  id_container</code></pre>
   - Mostrar informacion del contenedor:
-   <pre><code>$docker inspect id_container</code></pre>
+   <pre><code>$ docker inspect id_container</code></pre>
   - Para eliminar un contenedor (`-f` para forzar):
   <pre><code>$ docker rm -f id_container</code></pre>
   
